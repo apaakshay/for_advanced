@@ -1,3 +1,4 @@
+replace1=""
 num1=int(input("Akshay Enter a Number1:  "))
 print(num1)
 
