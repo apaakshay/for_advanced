@@ -16,20 +16,28 @@ operator=input("Please choose an option from these(1,2,3,4,5): ")
 if operator=="1":
     replace1="Addition"
     result=num1+num2
-
+    print("The Result Of", replace1, "of", num1, "and", num2, "is", result)
 if operator=="2":
-    replace1="Substraction"
-    result=num1-num2
+   if num1<num2:
+     print("Cannot subsract since the first number is less than the second number")
 
+   else:
+        replace1 = "Substraction"
+        result = num1 - num2
+   print("The Result Of", replace1, "of", num1, "and", num2, "is", result)
 if operator=="3":
-    replace1="Multiplication"
-    result=num1*num2
-
+    if num1==0 or num2==0:
+     print("Cannot multiply because num 1 or num 2 is zero")
+    else:
+        replace1="Multiplication"
+        result=num1*num2
+        print("The Result Of", replace1, "of", num1, "and", num2, "is", result)
 if operator=="4":
-    replace1="Division"
-    result=num1//num2
-
+    if num2==0:
+     replace1="Division"
+     result=num1//num2
+     print("The Result Of", replace1, "of", num1, "and", num2, "is", result)
 if operator=="5":
     replace1="Modulus"
     result=num1%num2
-print("The Result Of",replace1,"of",num1,"and",num2,"is",result)
+    print("The Result Of",replace1,"of",num1,"and",num2,"is",result)
